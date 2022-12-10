@@ -19,4 +19,5 @@ for x in range(3):
     for f in range(3):
         liste.append((x, f))
 print(liste)
-liste2 = []
+liste2 = [(x,y)for x in range(3) for y in range(3)]
+print(liste2)
