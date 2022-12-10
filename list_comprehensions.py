@@ -16,6 +16,7 @@ print(numaralar3)
 
 liste = []
 for x in range(3):
-    for f in range(3);
-    liste.append((x, f))
+    for f in range(3):
+        liste.append((x, f))
 print(liste)
+liste2 = []
