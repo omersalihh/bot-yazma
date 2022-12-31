@@ -33,9 +33,13 @@ okullarimiz = tarayici.find_element(By.LINK_TEXT,  "Okullarımız")
 
 #kısmi bağlantı metni ile elelmana ulaşalım
 aile_birligi = tarayici.find_element(By.PARTIAL_LINK_TEXT, "Aile Birliği")
-aile_birligi.click()
-sleep(5)
+#aile_birligi.click()
+#sleep(5)
 
 #etiket adı ile elemanlara ulaşalım
 linkler = tarayici.find_elements(By.TAG_NAME, "a")
 print(len(linkler))
+
+#xpath seçici ile elemana ulaşalım
+iletisim = tarayici.find_element(By.XPATH, '//*[@id="o_hakkinda"]')
+iletisim.screenshot("./foto/iletisim.png")
