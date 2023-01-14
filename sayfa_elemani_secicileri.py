@@ -15,7 +15,7 @@ baslik.screenshot("./foto/foto2.png")
 
 #css seçimi ile elemana ulaşalım
 arama_kutusu = tarayici.find_element(By.CSS_SELECTOR, "#araTextBox")
-arama_kutusu.send_keys("inovasyon")
+arama_kutusu.send_keys("selim şahin")
 sleep(2)
 arama_tus = tarayici.find_element( By.CSS_SELECTOR, "#araButton")
 #arama_tus.click()
